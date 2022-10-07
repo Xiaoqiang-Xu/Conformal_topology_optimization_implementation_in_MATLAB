@@ -4,9 +4,9 @@
 clc;
 close all;
 clear all;
-addpath('C:\Users\xxqhi\OneDrive - Stony Brook University\XLSM\Code_Xiaoqiang');
-addpath(genpath('C:\Users\xxqhi\OneDrive - Stony Brook University\XLSM\Code_Xiaoqiang\level_set'));
-addpath(genpath('C:\Users\xxqhi\OneDrive - Stony Brook University\XLSM\Code_Xiaoqiang\geometry_processing_package_master'));
+addpath('C:\Users\xxqhi\OneDrive\initial folder\Documents\CMADO_codes\DR_LSM_Heat_Conduction\Conformal_topology_optimization_implementation_in_MATLAB');
+addpath(genpath('C:\Users\xxqhi\OneDrive\initial folder\Documents\CMADO_codes\DR_LSM_Heat_Conduction\Conformal_topology_optimization_implementation_in_MATLAB\level_set'));
+addpath(genpath('C:\Users\xxqhi\OneDrive\initial folder\Documents\CMADO_codes\DR_LSM_Heat_Conduction\Conformal_topology_optimization_implementation_in_MATLAB\geometry_processing_package_master'));
 parent_dir_name = 'D:\XLSM\figs';
 %% Conformal mapping
 input_mesh = 'sphere_random_surface4_29.obj'; 
