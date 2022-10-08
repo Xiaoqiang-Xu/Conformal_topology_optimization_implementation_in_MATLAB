@@ -1,6 +1,4 @@
-%% created on 5/6/2021 for a heat conduction TO on a sphere random surface (part of a ellipsoid) with only boundary flux
-% PDE is solved on the 2D parameter domain, which is still a Laplace equation. 
-% The obj, volume and Vn are all evaluated from 2D FEA equivalently. 
+%% Topology optimization using dimension reduction level set method (DR-LSM), Xiaoqiang Xu, 2022 
 clc;
 close all;
 clear all;
