@@ -37,7 +37,7 @@ model.component('comp1').func('int1').set('importedname', 'Phi.txt');
 model.component('comp1').func('int1').set('importedstruct', 'Grid');
 model.component('comp1').func('int1').set('importeddim', '2D');
 
-model.file('res4').resource('C:\Users\xxqhi\OneDrive - Stony Brook University\XLSM\Code_Xiaoqiang\R3_DR_LSM\Phi.txt');
+model.file('res4').resource('C:\Users\xxqhi\OneDrive\initial folder\Documents\CMADO_codes\DR_LSM_Heat_Conduction\Conformal_topology_optimization_implementation_in_MATLAB\Phi.txt');
 
 model.component('comp1').func('int1').set('source', 'file');
 model.component('comp1').func('int1').set('nargs', '1');
@@ -48,7 +48,7 @@ model.component('comp1').func('int2').set('importedname', 'Conformal_factor2.txt
 model.component('comp1').func('int2').set('importedstruct', 'Spreadsheet');
 model.component('comp1').func('int2').set('importeddim', '2D');
 
-model.file('res5').resource('C:\Users\xxqhi\OneDrive - Stony Brook University\XLSM\Code_Xiaoqiang\R3_DR_LSM\Conformal_factor2.txt');
+model.file('res5').resource('C:\Users\xxqhi\OneDrive\initial folder\Documents\CMADO_codes\DR_LSM_Heat_Conduction\Conformal_topology_optimization_implementation_in_MATLAB\Conformal_factor2.txt');
 
 model.component('comp1').func('int2').set('source', 'file');
 model.component('comp1').func('int2').set('nargs', '2');
