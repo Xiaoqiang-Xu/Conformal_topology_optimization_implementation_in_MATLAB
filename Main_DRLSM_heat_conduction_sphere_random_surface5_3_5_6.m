@@ -236,8 +236,6 @@ end
 %% Modify velocity field by conformal factor, multiply e^-\lambda
 LSgrid.Vn=1./sqrt(G_grid).*LSgrid.Vn; 
 
-
-
 %% Level-set solution
 % if(nargin < 1)
 % 
