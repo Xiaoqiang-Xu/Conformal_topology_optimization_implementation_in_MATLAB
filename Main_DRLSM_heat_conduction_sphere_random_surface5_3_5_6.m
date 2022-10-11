@@ -318,10 +318,8 @@ delete(h);
 
 h1 = figure;
 set(h1, 'visible','off');
-% surf(g2.xs{1},g2.xs{2},LSgrid.Phi,'FaceAlpha',0.8)
 surf(g2.xs{1},g2.xs{2},LSgrid.Phi)
 axis equal;
-% FileName=[rst_fig_phi,'\2DPhi_', num2str(ItNum),'.jpg'];
 FileName=[parent_dir_name,'\2DPhi_', num2str(ItNum),'.jpg'];
 saveas(h1,FileName);
 delete(h1);
