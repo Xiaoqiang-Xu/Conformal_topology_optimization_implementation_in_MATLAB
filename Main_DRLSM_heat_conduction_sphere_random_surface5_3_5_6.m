@@ -23,8 +23,8 @@ g2 = processGrid(g2);
 
 %% Integration parameters.
 ItNum = 1;
-ReinitInterval =1;
-TotalItNum =600;
+ReinitInterval =5;
+TotalItNum =300;
 Vol_target=0.4;
 
 %% Initial level set Phi
