@@ -314,8 +314,6 @@ FileName=[parent_dir_name,'\Fig_', num2str(ItNum),'.jpg'];
 saveas(h,FileName);
 delete(h);
 
-
-
 h1 = figure;
 set(h1, 'visible','off');
 surf(g2.xs{1},g2.xs{2},LSgrid.Phi)
