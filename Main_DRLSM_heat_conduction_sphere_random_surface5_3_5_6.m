@@ -308,23 +308,23 @@ FileName=[parent_dir_name,'\Fig_', num2str(ItNum),'.jpg'];
 saveas(h,FileName);
 delete(h);
 
-h1 = figure;
-set(h1, 'visible','off');
-surf(g2.xs{1},g2.xs{2},LSgrid.Phi)
-axis equal;
-FileName=[parent_dir_name,'\2DPhi_', num2str(ItNum),'.jpg'];
-saveas(h1,FileName);
-delete(h1);
+% h1 = figure;
+% set(h1, 'visible','off');
+% surf(g2.xs{1},g2.xs{2},LSgrid.Phi)
+% axis equal;
+% FileName=[parent_dir_name,'\2DPhi_', num2str(ItNum),'.jpg'];
+% saveas(h1,FileName);
+% delete(h1);
        
 end
 
-h2 = figure;
-set(h2, 'visible','off');
-surf(g2.xs{1}, g2.xs{2}, LSgrid.Vn);
-axis equal;
-FileName=[parent_dir_name,'\Vn_', num2str(ItNum),'.jpg'];
-saveas(h2,FileName);
-delete(h2);
+%h2 = figure;
+%set(h2, 'visible','off');
+%surf(g2.xs{1}, g2.xs{2}, LSgrid.Vn);
+%axis equal;
+%FileName=[parent_dir_name,'\Vn_', num2str(ItNum),'.jpg'];
+%saveas(h2,FileName);
+%delete(h2);
 
 h3 = figure;
 set(h3, 'visible','off');
@@ -347,11 +347,11 @@ saveas(h3,FileName);
 
 delete(h3);
 
-parend_dir_name2 = [parent_dir_name,'\data'];
-mkdir(parend_dir_name2)
-FileName1=[parend_dir_name2,'\data_', num2str(ItNum),'.mat'];
+%parend_dir_name2 = [parent_dir_name,'\data'];
+%mkdir(parend_dir_name2)
+%FileName1=[parend_dir_name2,'\data_', num2str(ItNum),'.mat'];
 
-save(FileName1);
+%save(FileName1);
 
 ItNum = ItNum +1;
 %% Convergence criterion
