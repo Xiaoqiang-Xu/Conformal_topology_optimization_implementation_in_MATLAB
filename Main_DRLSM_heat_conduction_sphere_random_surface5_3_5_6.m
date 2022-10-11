@@ -122,7 +122,6 @@ Lambda=max(0,Lambda+1/mu_L*(FEAResult.Vol-FEAResult.Vol_ref*Vol_target))
 mu_L=alpha*mu_L
 end
 
-
 %% Call COMSOL FEA solver 
 % Calculate the displacement and strain energy desnsity
 FEAResult = FEM_2D_sphere_random_surface5_3_5_6(g2);
@@ -132,9 +131,6 @@ TC=FEAResult.TC;
 if abs((TC-TC1))/TC1<1e-6
     break;
 end
-
-disp(' ');
-
 disp(('Calculating shape gradient and velocity field...'));
 
 disp(' ');
