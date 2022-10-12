@@ -306,25 +306,8 @@ filename=[num2str(ItNum)];
 savefig();
 FileName=[parent_dir_name,'\Fig_', num2str(ItNum),'.jpg'];
 saveas(h,FileName);
-delete(h);
-
-% h1 = figure;
-% set(h1, 'visible','off');
-% surf(g2.xs{1},g2.xs{2},LSgrid.Phi)
-% axis equal;
-% FileName=[parent_dir_name,'\2DPhi_', num2str(ItNum),'.jpg'];
-% saveas(h1,FileName);
-% delete(h1);
-       
+delete(h);      
 end
-
-%h2 = figure;
-%set(h2, 'visible','off');
-%surf(g2.xs{1}, g2.xs{2}, LSgrid.Vn);
-%axis equal;
-%FileName=[parent_dir_name,'\Vn_', num2str(ItNum),'.jpg'];
-%saveas(h2,FileName);
-%delete(h2);
 
 h3 = figure;
 set(h3, 'visible','off');
@@ -332,27 +315,15 @@ tmp = 1:ItNum;
 VR(ItNum) = VolRatio; % volume ratio
 Obj(ItNum) = TC;
 [AX,H1,H2] = plotyy(tmp, Obj, tmp, VR ,'plot');
-
 set(get(AX(1),'Ylabel'),'String','Obj');
 set(get(AX(2),'Ylabel'),'String','Volume Ratio (VR)');
-
 title(['Obj(--) = ',num2str(Obj(end)),', VR(-) = ',num2str(VR(end))]);
-
 set(H1,'LineStyle','--');
 set(H2,'LineStyle','-');
-
 grid on
 FileName=[parent_dir_name,'\Obj.jpg'];
 saveas(h3,FileName);
-
 delete(h3);
-
-%parend_dir_name2 = [parent_dir_name,'\data'];
-%mkdir(parend_dir_name2)
-%FileName1=[parend_dir_name2,'\data_', num2str(ItNum),'.mat'];
-
-%save(FileName1);
-
 ItNum = ItNum +1;
 %% Convergence criterion
 TC1=TC;
